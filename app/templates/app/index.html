@@ -1,0 +1,469 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Alpha Coders</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'app/img/favicon.jpg' %}" rel="icon">
+    <link href="{% static 'app/img/apple-touch-icon.jpg' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'app/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'app/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <link href="{% static 'app/css/variables.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'app/css/main.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <a href="{% url 'home' %}" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+          <img src="{% static 'app/img/logo.png' %}" alt="">
+          <!-- <h1>AlphaCoders<span>Inc</span></h1> -->
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            
+            <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav><!-- .navbar -->
+
+        <a class="btn-getstarted scrollto" href="index.html#about">Get Started</a>
+
+      </div>
+    </header><!-- End Header -->
+
+    <section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
+      <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
+        <h2>Welcome to <span>Alpha Coders Software Company</span></h2>
+        <p>We are here to create a solution for your business</p>
+        <div class="d-flex">
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services" class="featured-services">
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-laptop icon"></i></div>
+                <h4><a href="" class="stretched-link">Web Applications</a></h4>
+                <p>Need a 
+                  <ul>
+                    <li>landing page?</li>
+                    <li>weblog?</li>
+                    <li>custom web app?</li>
+                  </ul>
+                  we are here to make it 
+                  </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-tablet icon"></i></div>
+                <h4><a href="" class="stretched-link">Mobile Applications</a></h4>
+                <p>We design & develope iOS/Android application no matter how complex it is </p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-pc-display icon"></i></div>
+                <h4><a href="" class="stretched-link">Desktop Applications</a></h4>
+                <p>If you are looking for some company to build enterprise software for you which requires high security, we are here to help</p>
+              </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-database icon"></i></div>
+                <h4><a href="" class="stretched-link">Database Design</a></h4>
+                <p>We design efficient, scalable & reliable databases which every business needs </p>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+      </section><!-- End Featured Services Section -->
+
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>About Us</h2>
+            <p>
+              Welcome to Alpha Coders Co, a software development company specializing in databases, mobile applications, and desktop applications. We are a team of experienced developers and designers who strive to deliver high-quality solutions to meet the needs of our clients.
+            </p>
+          </div>
+
+          <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-5">
+              <div class="about-img">
+                <img src="{% static 'app/img/about.jpg' %}" class="img-fluid" alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <h3 class="pt-0 pt-lg-5">We are here to create a solution for your business</h3>
+
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li><a class="nav-link active" data-bs-toggle="pill" href="#tab1">Value</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab2">Commitment</a></li>
+                <li><a class="nav-link" data-bs-toggle="pill" href="#tab3">Discover</a></li>
+              </ul><!-- End Tabs -->
+
+              <!-- Tab Content -->
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="tab1">
+
+                  <p class="fst-italic"></p>
+
+                  <div class="d-flex align-items-center mt-4">
+                    <i class="bi bi-check2"></i>
+                    <h4>Value the technology</h4>
+                  </div>
+                  <p>At Alpha Coders Co, we understand the importance of technology in today's fast-paced business world and are dedicated to delivering innovative and efficient solutions that help our clients achieve their goals. Our expertise in database design, mobile application development, and desktop applications ensures that our clients receive cutting-edge solutions that are both functional and user-friendly.</p>
+                  <div class="d-flex align-items-center mt-4">
+                    <i class="bi bi-check2"></i>
+                    <h4>Granted Results</h4>
+                  </div>
+                  <p>Whether you're looking to create a new website, develop a mobile application, or streamline your database system, we have the skills and expertise to deliver results. Our approach is always customer-focused, ensuring that our clients receive the support and guidance they need to succeed.</p>
+                
+                </div><!-- End Tab 1 Content -->
+
+                <div class="tab-pane fade show" id="tab2">
+
+                  <p class="fst-italic"></p>
+
+                  <div class="d-flex align-items-center mt-4">
+                    <i class="bi bi-check2"></i>
+                    <h4>Commitment</h4>
+                  </div>
+                  <p>We are proud of our track record of delivering successful projects on time and within budget. Our commitment to excellence and our passion for technology drive us to continuously innovate and improve our services.</p>
+                </div><!-- End Tab 2 Content -->
+
+                <div class="tab-pane fade show" id="tab3">
+
+                  <p class="fst-italic"></p>
+
+                  <div class="d-flex align-items-center mt-4">
+                    <i class="bi bi-check2"></i>
+                    <h4>Discover</h4>
+                  </div>
+                  <p>We invite you to learn more about Alpha Coders Co. and how we can help bring your technology vision to life. Contact us today to schedule a consultation and discover how we can help your business thrive</p>
+                </div><!-- End Tab 3 Content -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section><!-- End About Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Our services are specialized in databases,web applications, mobile applications, and desktop applications.</p>
+          </div>
+          <br>
+          <div id="services-div" class="row gy-5">
+          </div>
+
+        </div>
+      </section><!-- End Services Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div  class="container" data-aos="fade-up">
+  
+          <div class="testimonials-slider swiper">
+            <div id="testimonials-div" class="swiper-wrapper">
+  
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End Testimonials Section -->
+
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Our Pricing</h2>
+            <p>Contact us to get free consultation & discuss our product prices</p>
+          </div>
+
+        </div>
+      </section><!-- End Pricing Section -->
+
+      <!-- ======= F.A.Q Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container-fluid" data-aos="fade-up">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+              <div class="content px-xl-5">
+                <h3>Frequently Asked <strong>Questions</strong></h3>
+              </div>
+
+              <div class="accordion accordion-flush px-xl-5" id="faq-list">
+
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("{% static 'app/img/faq.jpg' %}");'>&nbsp;</div>
+          </div>
+
+        </div>
+      </section><!-- End F.A.Q Section -->
+
+
+      <!-- ======= Recent Blog Posts Section ======= -->
+      <section id="recent-blog-posts" class="recent-blog-posts">
+
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Blog</h2>
+            <p>Recent posts form our Blog</p>
+          </div>
+
+          <div id="blogs-div"class="row">
+            
+          </div>
+
+        </div>
+
+      </section><!-- End Recent Blog Posts Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+
+          <div class="section-header">
+            <h2>Contact Us</h2>
+          </div>
+
+        </div>
+
+        <div class="map">
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
+        </div><!-- End Google Maps -->
+
+        <div class="container">
+
+          <div class="row gy-5 gx-lg-5">
+
+            <div class="col-lg-4">
+
+              <div class="info">
+                <h3>Get in touch</h3>
+                <p>Visit us or send your inquiry using this form.</p>
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>1565e, Am Hurrir, Bur Dubai, UAE</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>info@AlphaCoders.com</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Call:</h4>
+                    <p>+971 5568 525 552</p>
+                  </div>
+                </div><!-- End Info Item -->
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-8">
+              <form id="contact-form" action="" method="post" role="form" class="php-email-form" >
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button id="send-message-btn" type="submit">Send Message</button></div>
+              </form>
+            </div><!-- End Contact Form -->
+
+          </div>
+
+        </div>
+      </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Alpha Coders</h3>
+                <p>
+                  1565e, Am Hurrir, <br>
+                  Bur Dubai, UAE<br><br>
+                  <strong>Phone:</strong> +1 5589 55488 55<br>
+                  <strong>Email:</strong> info@AlphaCoders.com<br>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Mobile Applications</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Desktop Applications</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#">Database Design</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Blog</h4>
+              <p>Subscribe to our Blog to get early access to technology relatable contents</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal text-center">
+        <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+          <div class="d-flex flex-column align-items-center align-items-lg-start">
+            <div class="copyright">
+              Copyright &copy; 2023 <strong><span>AlphaCoders</span></strong>. All Rights Reserved
+            </div>
+          </div>
+
+          <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+    </footer><!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'app/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'app/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'app/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'app/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'app/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'app/js/main.js' %}"></script>
+    <script src="{% static 'app/js/index-APIController.js' %}"></script>
+    
+
+  </body>
+
+</html>
