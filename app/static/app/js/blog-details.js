@@ -10,7 +10,8 @@ if (replyBtn) {
   replyBtn.addEventListener("click", sendComment);
 }
 
-function sendComment() {
+function sendComment(e) {
+  e.preventDefault();
   const rawData = Object.fromEntries(new FormData(replyForm).entries());
   const formData = new FormData();
 
@@ -39,4 +40,5 @@ function sendComment() {
       })
     )
     .catch((error) => console.log(error));
+  replyForm.reset();
 }

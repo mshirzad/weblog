@@ -34,7 +34,7 @@ def blog_details(request):
         publisher = User.objects.get(username=blog.publisher)
         comments = Comment.objects.filter(blog=request.GET.get('pk')).values()
         recent_blogs = Blog.objects.all().order_by('publish_date')[:5][::-1]
-        print(comments)
+        # print(comments)
         tags = blog.tags.split(",")
 
         context = {
@@ -150,7 +150,7 @@ class postMessage(viewsets.GenericViewSet,
         self.perform_create(serializer)
         headers=self.get_success_headers(serializer.data)
         
-        # self.send_email(request.data, request.headers)
+        self.send_email(request.data, request.headers)
         print('email sent')
 
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)

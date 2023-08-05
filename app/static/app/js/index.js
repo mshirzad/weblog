@@ -52,6 +52,8 @@ function getAPIData(url, callback) {
 }
 
 function sendMessage(e) {
+  e.preventDefault();
+
   const rawData = Object.fromEntries(new FormData(contactForm).entries());
   const formData = new FormData();
 
@@ -74,7 +76,6 @@ function sendMessage(e) {
         console.log(data);
         // contactForm.querySelector(".loading").classList.remove("d-block");
         if (response.ok) {
-          e.preventDefault();
           contactForm.querySelector(".sent-message").classList.add("d-block");
         } else {
           console.log("inside else ");
@@ -90,6 +91,7 @@ function sendMessage(e) {
         displayError(contactForm, error);
       })
   );
+  contactForm.reset();
   return false;
 }
 
